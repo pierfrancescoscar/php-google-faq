@@ -34,15 +34,15 @@ $faq = [
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="main.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>PHP Google Faq</title>
 </head>
 <body>
     <!-- Header -->
-    <section class="container-fluid header-container">
-        <header class="p-3">
+    <section class="container-fluid header-container p-3">
+        <header>
             <div class="row flex-column-reverse">
                 <div class="col-12">
                     <nav>
@@ -66,13 +66,30 @@ $faq = [
                     </nav>
                 </div>
 
+                <!-- Google Logo -->
                 <div class="col-12 d-flex align-items-center">
                     <img class="pe-4"src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="">
                     <h4>Privacy & Termini</h4>
                 </div>
-                
             </div>
         </header>
+    </section>
+
+    <!-- Main Content -->
+    <section class="container p-4">
+        <div class="row">
+            <div class="col-12">
+
+            <?php 
+            foreach($faq as $value){ ?>
+                    <h1><?php echo $value['question'] ?></h1>
+                    <p><?php echo $value['answer'] ?></p>
+                <?php
+            }
+                ?>
+
+            </div>
+        </div>
     </section>
 </body>
 </html>
