@@ -1,3 +1,24 @@
 .header-container {
     border-bottom: 1px solid black;
 }
+
+.faq-link {
+    color: black;
+}
+
+.faq-title {
+    font-size: 24px;
+    color: #3c4043;
+}
+
+p {
+    font-size: 12px;
+}
+
+.footer-container {
+    background-color: #f5f5f5;
+}
+
+.footer-navigation a {
+    font-size: 11px;
+}

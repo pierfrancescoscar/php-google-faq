@@ -46,21 +46,21 @@ $faq = [
             <div class="row flex-column-reverse">
                 <div class="col-12">
                     <nav>
-                        <ul class="d-flex list-unstyled">
+                        <ul class="d-flex list-unstyled mb-0">
                             <li class="pe-3">
-                                <a class="text-decoration-none" href="">Introduzione</a>
+                                <a class="faq-link text-decoration-none" href="">Introduzione</a>
                             </li>
                             <li class="pe-3">
-                                <a class="text-decoration-none"  href="">Norme sulla Privacy</a>
+                                <a class="faq-link text-decoration-none"  href="">Norme sulla Privacy</a>
                             </li>
                             <li class="pe-3">
-                                <a class="text-decoration-none" href="">Termini di servizio</a>
+                                <a class="faq-link text-decoration-none" href="">Termini di servizio</a>
                             </li>
                             <li class="pe-3">
-                                <a class="text-decoration-none"  href="">Tecnologie</a>
+                                <a class="faq-link text-decoration-none"  href="">Tecnologie</a>
                             </li>
                             <li class="pe-3"i>
-                                <a class="text-decoration-none"  href="">Domande frequenti</a>
+                                <a class="faq-link text-decoration-none"  href="">Domande frequenti</a>
                             </li>
                         </ul>
                     </nav>
@@ -82,12 +82,39 @@ $faq = [
 
             <?php 
             foreach($faq as $value){ ?>
-                    <h1><?php echo $value['question'] ?></h1>
+                    <h1 class="faq-title"><?php echo $value['question'] ?></h1>
                     <p><?php echo $value['answer'] ?></p>
                 <?php
             }
                 ?>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="container-fluid p-3 footer-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                        <nav class="footer-navigation">
+                            <ul class="d-flex list-unstyled mb-0">
+                                <li class="pe-3">
+                                    <a class="faq-link text-decoration-none" href="">Google</a>
+                                </li>
+                                <li class="pe-3">
+                                    <a class="faq-link text-decoration-none"  href="">Tutto su Google</a>
+                                </li>
+                                <li class="pe-3">
+                                    <a class="faq-link text-decoration-none" href="">Privacy</a>
+                                </li>
+                                <li class="pe-3">
+                                    <a class="faq-link text-decoration-none"  href="">Termini</a>
+                                </li>
+                            </ul>
+                        </nav>
+                </div>
             </div>
         </div>
     </section>
